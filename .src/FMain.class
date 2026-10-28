@@ -57,16 +57,18 @@ Public Sub Form_Open()
   lstInfo.Columns[1].Text = ("Value")
   lstInfo.Header = True
   
+  cboConvertType.Text = Settings["tipo", "WEBP"]
+  
 End
 
-Public Sub btnRemover_Click()
+Public Sub btnConvert_Click()
   
   Dim i As Integer = 0
   Dim sPath As String = ""
   Dim sInfo As String = ""
   Dim sSize As String = ""
   
-  btnRemover.Enabled = False
+  btnConvert.Enabled = False
   lstInfo.Clear()
   lblInfo.Text = ""
   If txtQualidade.Value > 100 Then 
@@ -99,24 +101,39 @@ Public Sub btnRemover_Click()
         Endif 
       Endif
       
-      sPath = File.Dir(row) & "/" & File.BaseName(row) & "." & Lower(cboConvertType.Text)
-      Shell "convert \"" & row & "\"" & sSize & " -quality " & txtQualidade.Value & " convert \"" & sPath & "\"" Wait To sInfo
+      If cboConvertType.Text = "Base64" Then         
+        Shell "convert \"" & row & "\"" & sSize & " -quality " & txtQualidade.Value & " inline: > \"" & row & ".txt\"" Wait
+      Else 
+        sPath = File.Dir(row) & "/" & File.BaseName(row) & "." & Lower(cboConvertType.Text)
+        
+        Shell "convert \"" & row & "\"" & sSize & " -quality " & txtQualidade.Value & " convert \"" & sPath & "\"" Wait To sInfo
+      Endif
       
       lstInfo.Add(i, Trim(row))
       
-      If Exist(sPath) Then 
-        lstInfo[i][1] = ("Converted file")
-      Else 
-        lstInfo[i][1] = ("File not converted")
+      If cboConvertType.Text = "Base64" Then  
+        If Exist(row & ".txt") Then 
+          lstInfo[i][1] = ("Converted file")
+        Else 
+          lstInfo[i][1] = ("File not converted")
+        Endif
+      Else
+        If Exist(sPath) Then 
+          lstInfo[i][1] = ("Converted file")
+        Else 
+          lstInfo[i][1] = ("File not converted")
+        Endif
       Endif
-      
       Inc i
     Next
     
     lblInfo.Text = ("Completed!")
   Endif 
   
-  btnRemover.Enabled = True
+  Settings["tipo"] = cboConvertType.Text
+  Settings.Save()
+  
+  btnConvert.Enabled = True
   
 End
 
