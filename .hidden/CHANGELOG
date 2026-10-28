@@ -1,3 +1,8 @@
+* Wed Oct 28 2026 Murilo Gomes <profmugomes@gmail.com> 4.1.2
+- Adicionado suporte para base64.
+- Adicionado recurso para salvar tipo selecionado.
+- Adicionado rótulo para exibição da versão do aplicativo.
+
 * Sun Oct 25 2026 Murilo Gomes <profmugomes@gmail.com> 4.0.1
 - Migrado para a linguagem de programação Gambas3.
 - Alterado a licença para GPL-2.0-only
