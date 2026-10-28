@@ -2,8 +2,9 @@
 Title=MiConvertImage
 Startup=FMain
 Icon=miconvertimage.png
-Version=4.0.1
+Version=4.1.1
 Component=gb.image
+Component=gb.settings
 Component=gb.gtk3
 Component=gb.form
 Description="Converts images into different formats.\nThe MiConvertImage is under license GPL-2.0-only"
