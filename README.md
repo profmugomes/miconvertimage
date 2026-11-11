@@ -1,5 +1,8 @@
 # MiConvertImage
 
+> [!NOTE]
+> A partir da versão 5, o MiConvertImage é compatível com Linux Lubuntu, devendo funcionar na distro Ubuntu e distros baseados no Ubuntu.
+
 Converts images into different formats.
 
 ## Information

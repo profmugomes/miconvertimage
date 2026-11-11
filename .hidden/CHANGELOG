@@ -1,9 +1,4 @@
-* Wed Oct 28 2026 Murilo Gomes <profmugomes@gmail.com> 4.1.2
-- Adicionado suporte para base64.
-- Adicionado recurso para salvar tipo selecionado.
-- Adicionado rótulo para exibição da versão do aplicativo.
-
-* Sun Oct 25 2026 Murilo Gomes <profmugomes@gmail.com> 4.0.1
-- Migrado para a linguagem de programação Gambas3.
-- Alterado a licença para GPL-2.0-only
+* Wed Nov 11 2026 Murilo Gomes <profmugomes@gmail.com> 4.1.4
+- Ajustado para funcionar com as dependencias do Gambas 3.20, compatível com a versão disponível no repositório do Lubuntu 26.04.
+- Adicionado dependencia requerida (gambas3-gb-gtk3-x11) no pacote deb
 
