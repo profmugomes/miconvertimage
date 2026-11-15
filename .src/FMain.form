@@ -8,6 +8,11 @@
   Resizable = False
   { Menu1 Menu
     Text = ("About")
+    { mnuCheckUpdate Menu
+      Text = ("Check Update")
+    }
+    { Menu4 Menu
+    }
     { mnuApoie Menu
       Text = ("Support MiConvertImage")
     }
@@ -21,7 +26,7 @@
     Text = ("Menu2")
     Visible = False
     { mnuCopiar Menu
-      Text = ("Copiar")
+      Text = ("Copy")
     }
   }
   { btnConvert Button
@@ -80,19 +85,6 @@
     Font = Font["Bold,12"]
     Text = ("Size (WxH)")
   }
-  { txtQualidade ValueBox
-    MoveScaled(25,27,23,5)
-    #Translate = False
-    Text = "90"
-  }
-  { txtWidth ValueBox
-    MoveScaled(49,27,10,5)
-    #Translate = False
-  }
-  { txtHeight ValueBox
-    MoveScaled(62,27,10,5)
-    #Translate = False
-  }
   { Label4 Label
     MoveScaled(60,28,3,4)
     #Translate = False
@@ -103,5 +95,17 @@
     #Translate = False
     Text = " "
     Value = CheckBox.True
+  }
+  { txtHeight ValueBox
+    MoveScaled(62,27,10,5)
+    #Translate = False
+  }
+  { txtWidth ValueBox
+    MoveScaled(49,27,10,5)
+    #Translate = False
+  }
+  { txtQualidade SpinBox
+    MoveScaled(25,27,23,5)
+    #Translate = False
   }
 }
