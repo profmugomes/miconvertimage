@@ -3,18 +3,20 @@
 > [!NOTE]
 > A partir da versão 5, o MiConvertImage é compatível com Linux Lubuntu, devendo funcionar na distro Ubuntu e distros baseados no Ubuntu.
 
-Converts images into different formats.
+Converta imagens em diferentes formatos.
 
-## Information
+## Informações
 
  - [Repository MiConvertImage](https://github.com/profmugomes/miconvertimage)
 
-## System Requirement
+## Requerimento do Sistema
 
 ### Linux
 
-- Ubuntu 26.04 or higher
-- imagemagick
+- Lubuntu 24.04 LTS ou superior
+- Dependencias do Gambas3, imagemagick
+
+> Na versão 24.04 requer o gambas3-gb-gtk3-x111
 
 ## 👤 Autor
 
