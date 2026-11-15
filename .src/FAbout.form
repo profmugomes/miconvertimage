@@ -64,6 +64,6 @@
     MoveScaled(1,9,66,4)
     #Translate = False
     Alignment = Align.TopLeft
-    Text = "Version: {version}"
+    Text = "Version: &1"
   }
 }

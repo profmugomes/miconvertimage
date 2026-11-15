@@ -13,6 +13,6 @@ End
 
 Public Sub Form_Open()
 
-  lblVersion.Text = Replace(lblVersion.Text, "{version}", Application.Version)
+  lblVersion.Text = Subst(lblVersion.Text, Application.Version)
 
 End
