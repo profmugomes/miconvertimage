@@ -1,3 +1,8 @@
+* Sun Nov 15 2026 Murilo Gomes <profmugomes@gmail.com> 4.1.5
+- Alterado o campo de qualidade para spinbox.
+- Alterado o bytecode para suportar o Ubuntu 24.04.
+- Realizado ajustes menores de otimização.
+
 * Wed Nov 11 2026 Murilo Gomes <profmugomes@gmail.com> 4.1.5
 - Removido o gambas3-gb-gkt3-x11 para evitar incompatibilidade com a versão mais recente.
 
