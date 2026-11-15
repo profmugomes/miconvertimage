@@ -1,9 +1,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: miconvertimage 3.19.0\n"
-"PO-Revision-Date: 2025-07-14 16:53 UTC\n"
-"Last-Translator: Murilo Gomes <mugomesoficial@gmail.com>\n"
+"Project-Id-Version: miconvertimage 3.22.2\n"
+"PO-Revision-Date: 2026-11-15 19:07 UTC\n"
+"Last-Translator: profmugomes <profmugomes@gmail.com>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -13,69 +13,78 @@ msgstr ""
 msgid "<b>imagemagick</b> not found!"
 msgstr "<b>imagemagick </b> não encontrado!"
 
-#: FMain.form:36
+#: FMain.form:37
 msgid "About"
 msgstr "Sobre"
 
-#: FMain.form:53
-msgid "About MIConvertImage"
-msgstr "Sobre MIConvertImage"
+#: FAbout.form:18 FMain.form:54
+msgid "About MiConvertImage"
+msgstr "Sobre MiConvertImage"
 
-#: FMain.form:77
+#: FMain.form:88
 msgid "Add Files"
 msgstr "Adicionar arquivos"
 
-#: FMain.form:39
+#: FMain.form:40
 msgid "Check Update"
-msgstr "Verificar Atualizações"
+msgstr "Verificar Atualização"
 
-#: FMain.class:116
+#: FMain.class:130
 msgid "Completed!"
 msgstr "Concluído!"
 
-#: FMain.form:60
+#: FMain.form:70
 msgid "Convert"
 msgstr "Converter"
 
-#: FMain.class:108
+#: FMain.class:116
 msgid "Converted file"
 msgstr "Arquivo convertido"
 
-#: FMain.class:77
+#: FMain.class:79
 msgid "Converting &1..."
 msgstr "Convertendo &1..."
 
 # gb-ignore
 #: .project:2
-msgid "Converts images into different formats.\nThe MIConvertImage is under license GPL-2.0-only"
+msgid "Converts images into different formats.\nThe MiConvertImage is under license GPL-2.0-only"
 msgstr ""
 
-#: FMain.form:89
+#: FMain.form:100
 msgid "Convert to"
 msgstr "Converter para"
 
-#: FMain.class:110
+#: FMain.form:63
+msgid "Copy"
+msgstr "Copiar"
+
+#: FMain.class:118
 msgid "File not converted"
 msgstr "Arquivo não convertido"
 
 # gb-ignore
-#: .project:1 FMain.form:31
-msgid "MIConvertImage"
+#: FMain.form:59
+msgid "Menu2"
+msgstr ""
+
+# gb-ignore
+#: .project:1 FMain.form:32
+msgid "MiConvertImage"
 msgstr ""
 
 #: FMain.class:55
 msgid "Name"
 msgstr "Nome"
 
-#: FMain.form:120
+#: FMain.form:124
 msgid "Quality (%)"
 msgstr "Qualidade (%)"
 
-#: FMain.form:83
+#: FMain.form:94
 msgid "Remove"
 msgstr "Remover"
 
-#: FMain.form:107
+#: FMain.form:118
 msgid "Remove All"
 msgstr "Remover Tudo"
 
@@ -83,17 +92,13 @@ msgstr "Remover Tudo"
 msgid "Select File"
 msgstr "Selecione o arquivo"
 
-#: FMain.form:126
+#: FMain.form:130
 msgid "Size (WxH)"
 msgstr "Tamanho (LxA)"
 
-#: FMain.form:46
-msgid "Subscribers"
-msgstr "Assinantes"
-
-#: FMain.form:114
-msgid "Support MIConvertImage"
-msgstr "Apoie MIConvertImage"
+#: FMain.form:47
+msgid "Support MiConvertImage"
+msgstr "Apoie MiConvertImage"
 
 #: FMain.class:57
 msgid "Value"
